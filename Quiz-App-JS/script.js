@@ -95,11 +95,18 @@ function showResults() {
     playAgainButton.innerText = 'Play Again';
     playAgainButton.classList.add('btn', 'btn-primary');
     playAgainButton.addEventListener('click', () => {
-        // Reset the quiz when the "Play Again" button is clicked
-        startGame();
+        resetQuiz();
     });
     quizQuestions.appendChild(playAgainButton);
 
+    nextButton.classList.add('hide');
+}
+
+// Reset quiz
+function resetQuiz() {
+    quizQuestions.classList.add('hide');
+    document.getElementById('category-selection').classList.remove('hide');
+    nextButton.innerText = 'Next Question';
     nextButton.classList.add('hide');
 }
 
