@@ -1,3 +1,14 @@
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+h1{
+  text-align: center;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -13,18 +24,18 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 200px;
   }
   
   h1 {
     margin-top: 0;
   }
   
-  #taskInput {
+  /* #taskInput {
     width: 80%;
     padding: 10px;
-    margin-bottom: 10px;
-  }
+  
+  } */
   
   button {
     padding: 10px;
@@ -34,9 +45,6 @@ body {
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #4cae4c;
-  }
   
   ul {
     list-style: none;
@@ -47,6 +55,7 @@ body {
     padding: 10px;
     background: #f9f9f9;
     margin-bottom: 5px;
+    margin-right: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
