@@ -9,42 +9,67 @@
 </head>
 
 <body>
-    <div class="slideshow-container">
-        <h1 id="heading">Slide Show</h1>
-        <div class="slides fade">
-            <img src="1.jpeg" alt="Slide 1">
-        </div>
-        <div class="slides fade">
-            <img src="2.jpeg" alt="Slide 2">
-        </div>
-        <div class="slides fade">
-            <img src="3.jpeg" alt="Slide 3">
-        </div>
-        <div class="slides fade">
-            <img src="4.jpeg" alt="Slide 3">
-        </div>
-        <div class="slides fade">
-            <img src="5.jpeg" alt="Slide 3">
-        </div>
-        <div class="slides fade">
-            <img src="6.jpeg" alt="Slide 3">
-        </div>
-        <div class="slides fade">
-            <img src="7.jpeg" alt="Slide 3">
-        </div>
-        <div class="slides fade">
-            <img src="8.jpeg" alt="Slide 3">
-        </div>
-        <div class="slides fade">
-            <img src="9.jpeg" alt="Slide 3">
-        </div>
-        <div class="slides fade">
-            <img src="10.jpeg" alt="Slide 3">
-        </div>
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
+    <h2 style="text-align:center">Slideshow Gallery</h2>
 
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="1.jpeg" style="width:100%; height: 600px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="8.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="3.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="4.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="5.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="6.jpeg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Quaid's Tomb">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="8.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Kashmir Valley">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Old Qilla">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Peshawar House">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Balochistan">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Badshahi Mosque">
+    </div>
+  </div>
+</div>
     <script src="script.js"></script>
 </body>
 
